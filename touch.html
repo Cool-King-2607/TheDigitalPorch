@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gentle Guide to the Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 20px;
+            background-color: #FDFBF7;
+            color: #1A2E1A;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            text-align: center;
+            }
+
+        h1 {
+            font-family: "Lora", serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: "Lora", serif;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-family: "Atkinson Hyperlegible", sans-serif;
+            margin-bottom: 25px;
+        }
+
+        .button_text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #C84C09;
+        }
+
+        .site-header {
+            background-color: #FDFBF7; 
+            border-bottom: 4px solid #2D6A4F;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Lora', serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #1A2E1A;
+        }
+
+        .main-nav a {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: #1A2E1A;
+            text-decoration: none;
+            margin-left: 30px;
+            padding: 5px 0;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            color: #C84C09;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+
+        .site-footer {
+            background-color: #E9E3D5;
+            margin-top: 60px;
+            padding: 40px 20px;
+            border-top: 1px solid #1A2E1A;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .footer-bottom {
+            font-size: 16px;
+            color: #1A2E1A;
+            opacity: 0.8;
+        }
+
+        .big-button {
+            /* Colors */
+            background-color: #2D6A4F; /* Forest Green */
+            color: #FDFBF7;
+            text-shadow:
+            -1px -1px 0 #1A2E1A,
+            1px -1px 0 #1A2E1A,
+            -1px 1px 0 #1A2E1A,
+            1px 1px 0 #1A2E1A;
+            
+            /* Typography */
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            
+            /* Sizing & Shape */
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 12px;
+            border: none;
+            
+            /* The "Physical" Look */
+            box-shadow: 0 6px 0 #1A2E1A;
+            transition: all 0.1s;
+            cursor: pointer;
+        }
+
+        .big-button:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+        }
+
+        .big-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #1A2E1A;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">The Digital Porch</div>
+            <nav class="main-nav">
+                <a href="index.html">Welcome</a>
+                <a href="search.html">Find Anything</a>
+                <a href="touch.html"class="active">Stay in Touch</a>
+                <a href="safety.html">Safety and Tips</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Talking to Friends and Family</h1>
+    <h2>What is Email?</h2>
+    <img width="8%" src="./envelope-fill.svg" alt="Envelope">
+    <p>Email is a fast way to send digital letters to your friends and family. Your "Inbox" is where you find mail you have received, while "Compose" is the button you use to write a new message.</p>
+    <h2>Video Calls</h2>
+    <img width="8%" src="./telephone-fill.svg" alt="Call">
+    <p>Video calls let you see and hear your family through your computer screen in real-time. Make sure your volume is turned up and sit in a well-lit room so your loved ones can see your smile clearly.</p>
+    <div style="display: flex; justify-content: space-evenly;">
+        <a class="big-button" href="safety.html">Safety and Tips →</a>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Digital Porch - Simple Guides for Everyone</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
